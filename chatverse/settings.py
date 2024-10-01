@@ -1,9 +1,10 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv,dotenv_values
+
+from dotenv import load_dotenv
 
 # dotenv_values('.env-dev','utf-8')
-load_dotenv(dotenv_path='.env-dev',encoding='utf-8')
+load_dotenv('.env-dev',encoding='utf-8')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
